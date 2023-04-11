@@ -1,0 +1,6 @@
+!.gitignore
+
+# Others
+.DS_Store
+/.idea/
+tags
