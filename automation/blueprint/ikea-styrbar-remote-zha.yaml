@@ -156,8 +156,8 @@ action:
                 - service: light.turn_on
                   target: !input "light"
                   data:
-                    brightness_step_pct: 5
-                    transition: 1
+                    brightness_step_pct: 10
+                    transition: 0
                 - delay: !input "hold_time"
       - conditions:
           - "{{ command == 'move' }}"
@@ -170,7 +170,7 @@ action:
                 - service: light.turn_on
                   target: !input "light"
                   data:
-                    brightness_step_pct: -5
+                    brightness_step_pct: -10
                     transition: 1
                 - delay: !input "hold_time"
       - conditions:
