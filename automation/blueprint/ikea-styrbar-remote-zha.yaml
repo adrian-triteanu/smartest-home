@@ -61,12 +61,12 @@ blueprint:
           min: 0.0
           max: 100.0
           mode: slider
-          step: 0.3
+          step: 0.1
           unit_of_measurement: "%"
     hold_time:
       name: Hold Time
       description: Time between the execution of the brighter/darker actions when holding the brighter/darker button.
-      default: 0.5
+      default: 0.1
       selector:
         number:
           min: 0.1
